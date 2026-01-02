@@ -1,0 +1,55 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\
+[](bg:accent1 fg:primary)\
+$directory\
+[](fg:accent1 bg:accent2)\
+$git_branch\
+$git_status\
+[](fg:accent2 bg:secondary)\
+$character\
+[ ](fg:secondary)
+"""
+
+palette = "bogos"
+
+[palettes.bogos]
+primary = "#80a961" # bog-os green
+secondary = "#394260" # slate blue
+background = "#1D2230" # charcoal black
+foreground = "#EAE6DA" # bone white
+accent1 = "#D9B36C" # goblin gold
+accent2 = "#7E6BC4" # fen purple
+
+[directory]
+style = "fg:#ffffff bg:accent1"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[username]
+show_always = true
+style_user = "fg:foreground bg:primary"
+style_root = "fg:#ff0000 bg:#a3aed2"
+format = "[ $user ]($style)"
+
+[git_branch]
+symbol = ""
+style = "bg:#394260"
+format = '[[ $symbol $branch ](fg:foreground bg:accent2)]($style)'
+
+[git_status]
+style = "bg:#394260"
+format = '[[($all_status$ahead_behind )](fg:foreground bg:accent2)]($style)'
+
+[character]
+success_symbol = '[ \$](fg:foreground bg:secondary)'
+error_symbol   = '[ \$](fg:foreground bg:secondary)'
+format = "$symbol"
