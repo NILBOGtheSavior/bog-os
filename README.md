@@ -19,20 +19,20 @@ This repository contains progress notes from my experience in ricing my own Arch
 
 ### Desktop and OS
 
-**Hyprland** - Hyprland is used for the WM
-**Hyprlauncher** - A launcher part of the *Hypr* ecosystem.
-**Hyprpaper** - Wallpaper manager
-**Hyprlock** - Display lockscreen
+**Hyprland** - Hyprland is used for the WM  
+**Hyprlauncher** - A launcher part of the *Hypr* ecosystem  
+**Hyprpaper** - Wallpaper manager  
+**Hyprlock** - Display lockscreen  
 
-**SDDM (Simple Desktop Display Manager)** - This is used as the greeter and the DM
-**Quickshell** - Quickshell is used for the toolbar and all the custom UI elements.
-**Mako** - The notification daemon
-**Starship** - Shell customization
+**SDDM (Simple Desktop Display Manager)** - This is used as the greeter and the DM  
+**Quickshell** - Quickshell is used for the toolbar and all the custom UI elements  
+**Mako** - The notification daemon  
+**Starship** - Shell prompt customization  
 
 ### Applications
 
-**neovim** - Terminal based text editor
-**kitty** - Terminal emulator
-**btop** - Resource monitor
+**neovim** - Terminal based text editor  
+**kitty** - Terminal emulator  
+**btop** - Resource monitor  
 
 
