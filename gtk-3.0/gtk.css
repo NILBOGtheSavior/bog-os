@@ -1,0 +1,47 @@
+@define-color primary #80a961;
+/*bog-os green*/
+@define-color secondary #394260;
+/*slate blue*/
+@define-color background #1D2230;
+/*charcoal black*/
+@define-color foreground #EAE6DA;
+/*bone white*/
+@define-color accent1 #D9B36C;
+/*goblin gold*/
+@define-color accent2 #7E6BC4;
+/*fen purple*/
+
+toolbar {
+	background-color: @background;
+}
+
+widget {
+	color: @foreground;
+	background-color: @background;
+}
+
+window {
+	background-color: @background;
+}
+
+treeview {
+	color: @accent1;
+	background-color: @background;
+}
+
+menubar {
+	background-color: @background;
+}
+
+button {
+	color: @accent1;
+}
+
+label {
+	color: @accent1;
+}
+
+entry {
+	color: @foreground;
+	background-color: @secondary;
+}
