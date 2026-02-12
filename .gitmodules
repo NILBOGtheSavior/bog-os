@@ -1,3 +1,0 @@
-[submodule "bog-os_quickshell"]
-	path = ./quickshell
-	url = git@github.com:NILBOGtheSavior/bog-os_quickshell.git
