@@ -1,6 +1,7 @@
 # BogOS
 
-This repository contains progress notes from my experience in ricing my own Arch instance.
+![Desktop](.doc/bogos-1.png)
+![Desktop](.doc/bogos-2.png)
 
 ## Customization and Info
 
