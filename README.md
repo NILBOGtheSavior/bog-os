@@ -25,7 +25,7 @@
 **Hyprpaper** - Wallpaper manager  
 **Hyprlock** - Display lockscreen  
 
-**Quickshell**:
+**[Quickshell](https://github.com/NILBOGtheSavior/bog-os_quickshell)**:
 
 - Toolbar
 - System menu
