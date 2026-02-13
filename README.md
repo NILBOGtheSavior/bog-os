@@ -2,6 +2,7 @@
 
 ![Desktop](.doc/bogos-1.png)
 ![Desktop](.doc/bogos-2.png)
+![Desktop](.doc/bogos-3.png)
 
 ## Customization and Info
 
