@@ -13,6 +13,17 @@ $character\
 [ ](fg:bright-black)
 """
 
+right_format = """
+[](fg:bright-black)\
+$time\
+[](fg:bright-black)
+"""
+
+[time]
+disabled = false
+time_format = '%R'
+format = '[$time](bg:bright-black fg:green)'
+
 [directory]
 format = "[ $path ](fg:bright-black bg:yellow)"
 truncation_length = 3
