@@ -12,31 +12,57 @@
         "1": "#80A639",
       }
     },
+  "display": {
+    "separator": " │ ",
+    "key": {
+      "width": 15
+    },
+    
+    },
   "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
+    {
+      "type": "custom",
+      "format": "╭──────────────────────────────────╮"
+    },
+    {
+      "type": "title",
+      "format": "│ 󰪫  {user-name}@{host-name}       │"
+    },
+    {
+      "type": "custom",
+      "format": "│••••••••••••••••••••••••••••••••••│"
+    },
+    {
+      "type": "os",
+      "key": "│ OS",
+      // "keyColor": "blue",
+      "format": "BogOS ({name})"
+    },
+    {
+      "type": "kernel",
+      "keyColor": "blue",
+    },
+    {
+      "type": "uptime",
+      "keyColor": "blue",
+    },
+    {
+      "type": "packages",
+      "keyColor": "blue",
+    },
     "shell",
-    "display",
     "wm",
     "theme",
-    // "icons",
-    // "font",
-    // "cursor",
     "terminal",
-    // "terminalfont",
     "cpu",
     "gpu",
     "memory",
-    // "swap",
-    // "disk",
-    // "localip",
     "battery",
     "locale",
-    "colors"
+    {
+      "type": "colors",
+      "key": "Colors",
+      "symbol": "circle"
+    }
   ]
 }
