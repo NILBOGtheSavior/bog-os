@@ -4,6 +4,7 @@
 CONFIG_DIR="$HOME/.config"
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+ln -sfn "$REPO_DIR/themes" "$CONFIG_DIR/themes"
 ln -sfn "$REPO_DIR/kitty" "$CONFIG_DIR/kitty"
 ln -sfn "$REPO_DIR/gtk-3.0" "$CONFIG_DIR/gtk-3.0"
 ln -sfn "$REPO_DIR/starship" "$CONFIG_DIR/starship"
