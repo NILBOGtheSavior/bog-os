@@ -1,30 +1,20 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
+[](fg:green)\
 $username\
-[](bg:accent1 fg:primary)\
+[](bg:yellow fg:green)\
 $directory\
-[](fg:accent1 bg:accent2)\
+[](fg:yellow bg:cyan)\
 $git_branch\
 $git_status\
-[](fg:accent2 bg:secondary)\
+[](fg:cyan bg:bright-black)\
 $character\
-[ ](fg:secondary)
+[ ](fg:bright-black)
 """
 
-palette = "bogos"
-
-[palettes.bogos]
-primary = "#80a961" # bog-os green
-secondary = "#394260" # slate blue
-background = "#1D2230" # charcoal black
-foreground = "#EAE6DA" # bone white
-accent1 = "#D9B36C" # goblin gold
-accent2 = "#7E6BC4" # fen purple
-
 [directory]
-style = "fg:#ffffff bg:accent1"
-format = "[ $path ]($style)"
+format = "[ $path ](fg:bright-black bg:yellow)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -36,20 +26,21 @@ truncation_symbol = "…/"
 
 [username]
 show_always = true
-style_user = "fg:foreground bg:primary"
-style_root = "fg:#ff0000 bg:#a3aed2"
+style_user = "fg:bright-black bg:green"
 format = "[ $user ]($style)"
 
 [git_branch]
 symbol = ""
 style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:foreground bg:accent2)]($style)'
+format = '[[ $symbol $branch ](fg:bright-black bg:cyan)]($style)'
 
 [git_status]
 style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:foreground bg:accent2)]($style)'
+format = '[[($all_status$ahead_behind )](fg:bright-black bg:cyan)]($style)'
 
 [character]
-success_symbol = '[ \$](fg:foreground bg:secondary)'
-error_symbol   = '[ \$](fg:foreground bg:secondary)'
+success_symbol			= '[ \$](fg:white bg:bright-black)'
+error_symbol			= '[ !](fg:red bg:bright-black)'
+vimcmd_symbol			= '[ ](fg:white bg:bright-black)'
+vimcmd_replace_one_symbol	= '[ ](fg:white bg:bright-black)'
 format = "$symbol"
