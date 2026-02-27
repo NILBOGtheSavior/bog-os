@@ -13,56 +13,85 @@
       }
     },
   "display": {
-    "separator": " │ ",
+    "separator": "",
     "key": {
-      "width": 15
+      "width": 20
     },
-    
-    },
+    "constants": [
+            "\u001b[35C"
+        ]
+  },
   "modules": [
     {
       "type": "custom",
-      "format": "╭──────────────────────────────────╮"
+      "format": "╭─────────────────────────────────────────────────╮"
     },
     {
       "type": "title",
-      "format": "│ 󰪫  {user-name}@{host-name}       │"
+      "key": "│   User      {$1}│",
+      "format": "{1}@{2}"
     },
     {
       "type": "custom",
-      "format": "│••••••••••••••••••••••••••••••••••│"
+      "format": "├─────────────╮                                   │"
     },
     {
       "type": "os",
-      "key": "│ OS",
-      // "keyColor": "blue",
+      "key": "{#0}│ {#31}󰣇  OS{#0}       │{$1}│",
       "format": "BogOS ({name})"
     },
     {
       "type": "kernel",
-      "keyColor": "blue",
+      "key": "{#0}│ {#32}  Kernel{#0}   │{$1}│"
     },
     {
       "type": "uptime",
-      "keyColor": "blue",
+      "key": "{#0}│ {#33}󰥔  Uptime{#0}   │{$1}│"
     },
     {
       "type": "packages",
-      "keyColor": "blue",
+      "key": "{#0}│ {#34}󰏖  Packages{#0} │{$1}│"
     },
-    "shell",
-    "wm",
-    "theme",
-    "terminal",
-    "cpu",
-    "gpu",
-    "memory",
-    "battery",
-    "locale",
+    {
+      "type": "shell",
+      "key": "{#0}│ {#35}  Shell{#0}    │{$1}│"
+    },
+    {
+      "type": "wm",
+      "key": "{#0}│ {#36}  WM{#0}       │{$1}│"
+    },
+    {
+      "type": "terminal",
+      "key": "{#0}│ {#37}  Terminal{#0} │{$1}│"
+    },
+    {
+      "type": "cpu",
+      "key": "{#0}│ {#31}  CPU{#0}      │{$1}│"
+    },
+    {
+      "type": "gpu",
+      "key": "{#0}│ {#32}󰢮  GPU{#0}      │{$1}│"
+    },
+    {
+      "type": "memory",
+      "key": "{#0}│ {#33}  Memory{#0}   │{$1}│"
+    },
+    {
+      "type": "battery",
+      "key": "{#0}│ {#34}  Battery{#0}  │{$1}│"
+    },
+    {
+      "type": "locale",
+      "key": "{#0}│ {#35}󰇧  Locale{#0}   │{$1}│"
+    },
     {
       "type": "colors",
-      "key": "Colors",
+      "key": "{#0}│ {#36}  Colors{#0}   │{$1}│",
       "symbol": "circle"
+    },
+    {
+      "type": "custom",
+      "format": "╰─────────────┴───────────────────────────────────╯"
     }
   ]
 }
