@@ -22,7 +22,7 @@ $time\
 [time]
 disabled = false
 time_format = '%R'
-format = '[$time](bg:bright-black fg:green)'
+format = '[$time](bg:bright-black fg:blue)'
 
 [directory]
 format = "[ $path ](fg:bright-black bg:green)"
