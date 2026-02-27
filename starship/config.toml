@@ -1,11 +1,11 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](fg:green)\
+[](fg:blue)\
 $username\
-[](bg:yellow fg:green)\
+[](fg:blue bg:green)\
 $directory\
-[](fg:yellow bg:cyan)\
+[](fg:green bg:cyan)\
 $git_branch\
 $git_status\
 [](fg:cyan bg:bright-black)\
@@ -25,7 +25,7 @@ time_format = '%R'
 format = '[$time](bg:bright-black fg:green)'
 
 [directory]
-format = "[ $path ](fg:bright-black bg:yellow)"
+format = "[ $path ](fg:bright-black bg:green)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -37,7 +37,7 @@ truncation_symbol = "…/"
 
 [username]
 show_always = true
-style_user = "fg:bright-black bg:green"
+style_user = "fg:bright-black bg:blue"
 format = "[ $user ]($style)"
 
 [git_branch]
