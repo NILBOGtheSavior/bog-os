@@ -1,8 +1,9 @@
 # BogOS
 
 ![Desktop](.doc/bogos-1.png)
-![Desktop](.doc/bogos-2.png)
-![Desktop](.doc/bogos-3.png)
+![Fastfetch](.doc/bogos-2.png)
+![Terminal](.doc/bogos-3.png)
+![Control Panel](.doc/bogos-4.png)
 
 ## Customization and Info
 
