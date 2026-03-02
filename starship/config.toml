@@ -2,13 +2,27 @@
 
 format = """
 [](fg:blue)\
+$os\
 $username\
 [](fg:blue bg:green)\
 $directory\
 [](fg:green bg:cyan)\
 $git_branch\
 $git_status\
-[](fg:cyan bg:bright-black)\
+[](fg:cyan bg:white)\
+$c\
+$cpp\
+$golang\
+$java\
+$kotlin\
+$kubernetes\
+$lua\
+$nodejs\
+$python\
+$rlang\
+$ruby\
+$rust\
+[](fg:white bg:bright-black)\
 $character\
 [ ](fg:bright-black)
 """
@@ -16,6 +30,7 @@ $character\
 right_format = """
 [](fg:bright-black)\
 $time\
+$battery\
 [](fg:bright-black)
 """
 
@@ -55,3 +70,59 @@ error_symbol			= '[ !](fg:red bg:bright-black)'
 vimcmd_symbol			= '[ ](fg:white bg:bright-black)'
 vimcmd_replace_one_symbol	= '[ ](fg:white bg:bright-black)'
 format = "$symbol"
+
+# Programming languages
+
+[c]
+format = '[  ](fg:black bg:white)'
+
+[cpp]
+format = '[  ](fg:black bg:white)'
+
+[golang]
+format = '[  ](fg:black bg:white)'
+
+[java]
+format = '[  ](fg:black bg:white)'
+
+[kotlin]
+format = '[  ](fg:black bg:white)'
+
+[kubernetes]
+format = '[  ](fg:black bg:white)'
+
+[lua]
+format = '[ 󰢱 ](fg:black bg:white)'
+
+[nodejs]
+format = '[  ](fg:black bg:white)'
+
+[python]
+format = '[  ](fg:black bg:white)'
+
+[rlang]
+format = '[  ](fg:black bg:white)'
+
+[ruby]
+format = '[  ](fg:black bg:white)'
+
+[rust]
+format = '[  ](fg:black bg:white)'
+
+# $python\
+# $rlang\
+# $ruby\
+# $rust\
+
+# Battery status
+
+[battery]
+disabled = false
+
+[[battery.display]]
+threshold = 10
+style = 'bold red'
+
+[[battery.display]]
+threshold = 30
+style = 'bold yellow'
