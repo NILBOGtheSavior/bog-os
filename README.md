@@ -9,14 +9,14 @@
 
 ### Colors
 
-|Type          |Hex Code |Color Name     |
-| ------------ | ------- | ------------- |
-|primary       |#80a961  |bog-os green   |
-|secondary     |#394260  |slate blue     |
-|background    |#1D2230  |charcoal black |
-|foreground    |#EAE6DA  |bone white     |
-|accent1       |#D9B36C  |goblin gold    |
-|accent2       |#7E6BC4  |fen purple     |
+| Type         | Hex Code    | Color Name    |
+| ------------ | ----------- | ------------- |
+|primary       | #80a961  |bog-os green   |
+|secondary     | #394260  |slate blue     |
+|background    | #1D2230  |charcoal black |
+|foreground    | #EAE6DA  |bone white     |
+|accent1       | #D9B36C  |goblin gold    |
+|accent2       | #7E6BC4  |fen purple     |
 
 ## Programs and Tools
 
