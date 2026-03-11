@@ -1,15 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](fg:blue)\
+[](fg:bright-black)\
 $os\
 $username\
-[](fg:blue bg:green)\
+[](fg:green bg:bright-black)\
 $directory\
-[](fg:green bg:cyan)\
+[](fg:green bg:blue)\
 $git_branch\
 $git_status\
-[](fg:cyan bg:white)\
+[](fg:blue bg:cyan)\
 $c\
 $cpp\
 $golang\
@@ -22,7 +22,7 @@ $python\
 $rlang\
 $ruby\
 $rust\
-[](fg:white bg:bright-black)\
+[](fg:cyan bg:bright-black)\
 $character\
 [ ](fg:bright-black)
 """
@@ -52,67 +52,61 @@ truncation_symbol = "…/"
 
 [username]
 show_always = true
-style_user = "fg:bright-black bg:blue"
+style_user = "fg:white bg:bright-black"
 format = "[ $user ]($style)"
 
 [git_branch]
 symbol = ""
-style = "bg:#394260"
-format = '[[ $symbol $branch ](fg:bright-black bg:cyan)]($style)'
+format = '[[ $symbol $branch ](fg:bright-black bg:blue)]($style)'
 
 [git_status]
 style = "bg:#394260"
-format = '[[($all_status$ahead_behind )](fg:bright-black bg:cyan)]($style)'
+format = '[[($all_status$ahead_behind )](fg:bright-black bg:blue)]($style)'
 
 [character]
-success_symbol			= '[ \$](fg:white bg:bright-black)'
-error_symbol			= '[ !](fg:red bg:bright-black)'
-vimcmd_symbol			= '[ ](fg:white bg:bright-black)'
-vimcmd_replace_one_symbol	= '[ ](fg:white bg:bright-black)'
+success_symbol = '[ \$](fg:white bg:bright-black)'
+error_symbol = '[ !](fg:red bg:bright-black)'
+vimcmd_symbol = '[ ](fg:white bg:bright-black)'
+vimcmd_replace_one_symbol = '[ ](fg:white bg:bright-black)'
 format = "$symbol"
 
 # Programming languages
 
 [c]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [cpp]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [golang]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [java]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [kotlin]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [kubernetes]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [lua]
-format = '[ 󰢱 ](fg:black bg:white)'
+format = '[ 󰢱 ](fg:bright-black bg:cyan)'
 
 [nodejs]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [python]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [rlang]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [ruby]
-format = '[  ](fg:black bg:white)'
+format = '[  ](fg:bright-black bg:cyan)'
 
 [rust]
-format = '[  ](fg:black bg:white)'
-
-# $python\
-# $rlang\
-# $ruby\
-# $rust\
+format = '[  ](fg:bright-black bg:cyan)'
 
 # Battery status
 
