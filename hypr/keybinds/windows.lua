@@ -2,6 +2,10 @@
 
 hl.bind(Mod .. " + Q", hl.dsp.window.kill("activeWindow"))
 
+-- Mouse
+hl.bind(Mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
+hl.bind(Mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
 -- Move focus
 hl.bind(Mod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(Mod .. " + L", hl.dsp.focus({ direction = "right" }))
