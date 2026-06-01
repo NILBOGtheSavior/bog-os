@@ -1,7 +1,5 @@
 -- Windows
 
-hl.bind(Mod .. " + Q", hl.dsp.window.kill("activeWindow"))
-
 -- Mouse
 hl.bind(Mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(Mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
@@ -17,3 +15,7 @@ hl.bind(ShiftMod .. " + H", hl.dsp.window.move({ direction = "left" }))
 hl.bind(ShiftMod .. " + L", hl.dsp.window.move({ direction = "right" }))
 hl.bind(ShiftMod .. " + K", hl.dsp.window.move({ direction = "up" }))
 hl.bind(ShiftMod .. " + J", hl.dsp.window.move({ direction = "down" }))
+
+-- Misc window
+hl.bind(Mod .. " + Q", hl.dsp.window.kill("activeWindow"))
+hl.bind(Mod .. " + P", hl.dsp.window.float({ action = "toggle" }))
