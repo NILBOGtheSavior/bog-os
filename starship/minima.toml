@@ -1,0 +1,45 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '''
+╭─$username$hostname $directory [\[$git_branch $git_status\]](italic bright-black)
+╰─$character
+'''
+
+[username]
+show_always = true
+format = "[ $user](bold fg:white)"
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](bold fg:white)"
+
+[directory]
+format = "[$path](underline fg:blue)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[time]
+disabled = false
+time_format = "%R"
+format = "[ $time](italic fg:bright-black)"
+
+[git_status]
+format = '$all_status$ahead_behind'
+
+[git_branch]
+symbol = ""
+format = '[$branch$git_status](italic bright-black)'
+
+
+[character]
+success_symbol = '[ ](fg:white)'
+error_symbol = '[ ](fg:red)'
+vimcmd_symbol = '[ ](fg:blue)'
+vimcmd_replace_one_symbol = '[ ](fg:white)'
+format = "$symbol"
