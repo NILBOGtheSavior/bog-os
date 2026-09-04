@@ -7,7 +7,7 @@ format = '''
 
 [username]
 show_always = true
-format = "[ $user](bold fg:white)"
+format = "[ $user](bold white)"
 
 [hostname]
 ssh_only = false
@@ -24,18 +24,11 @@ truncation_symbol = "…/"
 "Music" = " "
 "Pictures" = " "
 
-[time]
-disabled = false
-time_format = "%R"
-format = "[ $time](italic fg:bright-black)"
-
 [git_status]
 format = '$all_status$ahead_behind'
 
 [git_branch]
-symbol = ""
-format = '[$branch$git_status](italic bright-black)'
-
+format = '[$branch](italic bright-black)'
 
 [character]
 success_symbol = '[ ](fg:white)'
