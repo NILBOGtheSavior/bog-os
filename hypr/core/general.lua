@@ -1,14 +1,9 @@
 hl.config({
 	general = {
-		gaps_in = 2,
-		gaps_out = 5,
+		gaps_in = 15,
+		gaps_out = 25,
 
-		border_size = 2,
-
-		col = {
-			active_border = { colors = { "rgb(80a961)", "rgb(7E6BC4)" }, angle = 45 },
-			inactive_border = "rgba(00000000)",
-		},
+		border_size = 0,
 
 		resize_on_border = true,
 
@@ -25,9 +20,9 @@ hl.config({
 
 		shadow = {
 			enabled = true,
-			range = 4,
-			render_power = 3,
-			color = "rgba(1a1a1aee)",
+			color = 0xaa111111,
+			color_inactive = 0x00000000,
+			range = 25,
 		},
 
 		blur = {
@@ -41,7 +36,7 @@ hl.config({
 		preserve_split = true,
 	},
 	master = {
-		new_status = "master",
+		new_status = master,
 	},
 	animations = {
 		enabled = true,

@@ -6,3 +6,4 @@ require("keybinds.init")
 require("layout.init")
 
 require("plugins.quickshell")
+require("plugins.mpvpaper")

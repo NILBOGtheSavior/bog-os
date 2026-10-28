@@ -18,6 +18,14 @@ for _, monitor in ipairs(monitors) do
 			monitor = monitor.name,
 			default = monitor.defaults and monitor.defaults[id] or nil,
 			default_name = monitor.names and monitor.names[id] or nil,
+			persistent = true,
 		})
 	end
 end
+
+hl.workspace_rule({
+	workspace = "name:games",
+	monitor = "DP-3",
+	default_name = "",
+	on_created_empty = "foot",
+})

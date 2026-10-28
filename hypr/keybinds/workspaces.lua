@@ -5,3 +5,5 @@ for i = 1, 10 do
 	hl.bind(AltMod .. " + " .. key, hl.dsp.focus({ workspace = i + 10 }))
 	hl.bind(AltShiftMod .. " + " .. key, hl.dsp.window.move({ workspace = i + 10 }))
 end
+
+hl.bind(Mod .. " + G", hl.dsp.focus({ workspace = "name:games" }))
